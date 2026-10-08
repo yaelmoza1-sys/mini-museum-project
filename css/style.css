@@ -1,89 +1,154 @@
 /* ===== Step 2: Type Selectors ===== */
 
-h1 {
-  color: darkslateblue;
-  font-size: 40px;
+/* עיצוב כללי */
+body {
+  text-align: center;
+  list-style-position: inside;
+
 }
 
-h2 {
-  color: teal;
-  font-size: 28px;
+/* בדיקת ספציפיות */
+h1{
+  color: rgba(219, 91, 16, 0.929);
+
+    font-family: Garamond, serif;
+    font-size: larger;
 }
 
-nav a {
-  text-transform: uppercase;
+.h1class {
+    color: rgba(18, 18, 89, 0.929);
+    font-family: Garamond, serif;
+    font-size: 32px;
+}
+
+/* הניקוד ספציפיות של h1: */
+/* אלמנט-1 id-0 class-0 */
+/* סהכ 1 כי אלמנט מקבל נק 1 */
+
+/* הניקוד ספציפיות של h1class: */
+/* אלמנט-0 id-0 class-1 */
+/* סהכ 10 כי class מקבל 10 נקודות */
+
+/* מנצח  h1class לסיכום */
+
+
+h2{
+    color: rgb(42, 42, 202);
+    font-family: Garamond, serif;
+    font-size: 24px;
+}
+
+footer{
+    background-color: rgb(182, 231, 248);
+    color: rgba(18, 18, 89, 0.929);
+    padding: 20px;
+}
+a {
   font-weight: bold;
+/* לא עובד */
 }
 
-footer {
-  background-color: #333333;
-  color: white;
-}
 
-/* ===== Step 3: Class Selectors ===== */
 
-.artist-card {
-  border: 2px solid darkslateblue;
-  border-radius: 10px;
-  background-color: lavender;
-}
 
-.thumbnail {
-  border: 3px solid #333333;
-  border-radius: 8px;
-}
+/* עמוד הבית */
+    .main-header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(182, 231, 248);
+      }
+      
+      .main-header ul li {
+        float: right;
+      }
+      
+      .main-header ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .main-header ul li a:hover {
+        background-color: blue;
+      }
+      
+      .main-nav{
+        font-weight: bold;
+      }
+      #HomeText {
+        font-size: x-large;
+      }
 
-/* ===== Step 4: Id Selectors ===== */
+      #logo {
+        border-radius: 50%;
+        border: 3px solid rgb(6, 6, 102);
 
-#vangogh h2 {
-  color: goldenrod;
-}
+      }
+      
+      /* artists */
 
-#monet h2 {
-  color: cornflowerblue;
-}
+      .artist-card {
+        border: 3px solid rgb(6, 6, 102);
+        border-radius: 10%;
+        background-color: beige;
+        border-radius: 35px 0px 0px 35px;
+      }
 
-#rembrandt h2 {
-  color: saddlebrown;
-}
+      /* גלריה */
 
-#welcome-text {
-  font-size: 22px;
-}
+      #alG {
+        display: flex;       
+        gap: 15px;           
+        flex-wrap: wrap;
+      } 
+      .MinGallery img {
+        width: 200px;
+        height: auto;
+        display: inline-block;
+      } 
 
-/* ===== Step 5: Parent + Child Selectors ===== */
-
-header nav a {
-  color: darkslateblue;
-}
-
-main article h2 {
-  font-size: 32px;
-}
-
-footer a {
-  color: white;
-}
-
-/* ===== Step 6: Specificity Check ===== */
-
-/*
-  The "Visit Us" <h2> in visit.html has class="section-title".
-  Two rules try to color it:
-    h2             { color: teal; }     (type selector, Step 2)
-    .section-title { color: crimson; }  (class selector, below)
-  Crimson wins: a class selector is more specific than a type selector,
-  so it wins no matter which rule comes first in the file.
-*/
-
-.section-title {
-  color: crimson;
-}
-
-/*
-  Specificity scores (id, class, type):
-    h2              -> (0, 0, 1)  one type
-    .artist-card    -> (0, 1, 0)  one class
-    #vangogh h2     -> (1, 0, 1)  one id + one type
-    header nav a    -> (0, 0, 3)  three types
-*/
+      .MinGallery h3 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      
+      #ykG h3 {
+        color: rgb(107, 139, 243);
+      }
+      
+      #mrG h3 {
+        color: rgb(54, 97, 238);
+      }
+      
+      #alG h3 {
+        color: rgb(45, 92, 244);
+      }
+      
+      #ykG, #mrG, #alG {
+        display: flex;       
+        justify-content: center; 
+        align-items: center;     
+        gap: 20px;               
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+      
+    
+      .MinGallery figure {
+        margin: 0;
+        text-align: center; 
+      }
+      
+      .MinGallery img {
+        width: 200px;
+        height: 140px;
+        object-fit: cover; 
+        display: block;
+      }
+      
+      

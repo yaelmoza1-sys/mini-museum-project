@@ -1,58 +1,77 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Art Museum - Home</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Mini Art Museum</h1>
-      <nav>
-        <ul class="pages">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="artists.html">Artists</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="visit.html">Visit &amp; Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<html lang="he" dir="rtl">
 
-    <main>
-      <section>
-        <img src="img/logo.svg" alt="Mini Art Museum logo" width="120" />
-        <h2>Welcome to the Mini Art Museum</h2>
-        <p id="welcome-text">
-          Discover masterpieces by some of the greatest painters in history.
-          Meet the artists, explore the gallery and plan your visit.
-        </p>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Art Museum - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-      <section>
-        <h2>Explore the Museum</h2>
-        <ul>
-          <li>
-            <a href="artists.html">Artists</a> - meet Vincent van Gogh, Claude
-            Monet and Rembrandt.
-          </li>
-          <li>
-            <a href="gallery.html">Gallery</a> - browse famous paintings from
-            our collection.
-          </li>
-          <li>
-            <a href="visit.html">Visit &amp; Contact</a> - hours, location and
-            contact info.
-          </li>
-        </ul>
-      </section>
-    </main>
+<body>
+  <header class="main-header">
 
-    <footer class="footer">
-      <ul class="footer-list">
-        <li id="museum-location">Sokolov 8 Be'er Sheva</li>
-        <li id="footer-museum-hours">8:00-20:00</li>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">דף הבית</a></li>
+        <li><a href="artists.html">אמנים</a></li>
+        <li><a href="gallery.html">גלריה</a></li>
+        <li><a href="visit.html">ביקור וצור קשר</a></li>
       </ul>
-    </footer>
-  </body>
+    </nav>
+    <h1 class="h1class">מוזיאון לאומנות</h1>
+
+  </header>
+
+  <section class="welcome">
+    <figure>
+      <img id="logo" src="logo.jpg" height="250" width="530">
+    </figure>
+    <div id="HomeText">
+      <p>
+        ברוכים הבאים למוזיאון לאומנות ישראלית! המוזיאון שלנו מהווה בית חם ליצירה מקומית ועכשווית ומציג מגוון רחב של
+        יצירות מרהיבות, תערוכות מתחלפות ואוספים ייחודיים של אמנים מובילים מהארץ ומכל העולם. אנו מזמינים אתכם לצאת למסע
+        מרתק בין סגנונות אמנותיים שונים, לגלות את הסיפורים העמוקים שמאחורי היצירות וליהנות מחוויה תרבותית מעשירה, מרגשת
+        ויוצאת דופן.
+      </p>
+      <p>
+        האומנות הישראלית היא פסיפס חי ונושם של זהויות, זיכרונות, נופים ורגשות. בין כתלי המוזיאון תוכלו להתרשם מהדיאלוג
+        המתמיד שבין המסורת לחדשנות – החל מציורי שמן קלאסיים של נופי הארץ והווי החיים המקומי, ועד ליצירות פיסול וקונספט
+        עכשוויות המאתגרות את המחשבה. כל גלריה במוזיאון מציעה מבט ייחודי על התפתחות התרבות והאמנות לאורך השנים.
+      </p>
+      <p>
+        אנחנו מאמינים שאומנות נועדה לגעת בכל אחד ואחת. הביקור במוזיאון אינו רק התבוננות פסיבית, אלא חוויה רב-חושית
+        מעוררת השראה. החללים שלנו מעוצבים בקפידה כדי לאפשר לכם להתנתק משגרה היומיום, להעמיק בכל פרט, ולהתחבר לטקסטורות,
+        לצבעים ולאורות שמחייים את האולם.
+      </p>
+      <p>
+        לצד אוספי הקבע המרשימים, המוזיאון מארח באופן שוטף תערוכות מתחלפות של אמנים מודרניים ומבטיחים. אנו מציעים מגוון
+        סיורים מודרכים, סדנאות יצירה, ומפגשים מרתקים עם האמנים עצמם. בין אם אתם חובבי אומנות מושבעים ובין אם זהו הביקור
+        הראשון שלכם, תמיד תמצאו אצלנו תערוכה חדשה לגלות.
+      </p>
+      <p>
+        אנחנו מזמינים אתכם לקחת פסק זמן, לשוטט בין הגלריות השונות, להתרשם מהאוספים העשיריםולהתחבר לרוח היצירה. צפיה מהנה
+        בגלריות האתר, נשמח לראותכם בין אורחינו במוזיאון!
+      </p>
+    </div>
+
+  </section>
+
+
+  <footer class="hours$location">
+    <div class="footer-hours">
+      <h3>שעות פעילות</h3>
+      <p>ימים א' - ה': 09:00 - 18:00</p>
+      <p>יום שישי: 09:00 - 14:00</p>
+      <p>שבת: סגור</p>
+    </div>
+
+    <div class="footer-location">
+      <a href="visit.html#map">למיקום</a>
+    </div>
+
+  </footer>
+
+</body>
+
 </html>
